@@ -18,8 +18,8 @@ echo plugins=(zsh-syntax-highlighting) >> ~/.zshrc
 
 ```bash
 mv ~/.zshrc ~/.zshrc.bak 
-wget https://raw.githubusercontent.com/zstg/oh-my-zsh/main/zshrc > ~/.zshrc
-wget https://raw.githubusercontent.com/zstg/oh-my-zsh/main/zshenv > ~/.zshenv
+wget https://raw.githubusercontent.com/zstg/oh-my-zsh/main/zshrc -o ~/.zshrc
+wget https://raw.githubusercontent.com/zstg/oh-my-zsh/main/zshenv -o ~/.zshenv
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 echo 'plugins=(zsh-syntax-highlighting)' >> ~/.zshrc
 echo source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh >> ~/.zshrc
