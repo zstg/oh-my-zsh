@@ -17,7 +17,10 @@ echo plugins=(zsh-syntax-highlighting) >> ~/.zshrc
 -->
 
 ```bash
-mv ~/.zshrc ~/.zshrc.bak 
+if [-f "~/.zshrc" ];
+ echo Moving your already existing ~/.zshrc to ~/.zshrc_bak ...
+ mv ~/.zshrc ~/.zshrc.bak 
+fi
 wget https://raw.githubusercontent.com/zstg/oh-my-zsh/main/zshrc -O ~/.zshrc
 wget https://raw.githubusercontent.com/zstg/oh-my-zsh/main/zshenv -O ~/.zshenv
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
