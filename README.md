@@ -21,7 +21,7 @@ mv ~/.zshrc ~/.zshrc.bak
 wget https://raw.githubusercontent.com/zstg/oh-my-zsh/main/zshrc > ~/.zshrc
 wget https://raw.githubusercontent.com/zstg/oh-my-zsh/main/zshenv > ~/.zshenv
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-echo plugins=(zsh-syntax-highlighting) >> ~/.zshrc
+echo 'plugins=(zsh-syntax-highlighting)' >> ~/.zshrc
 echo source ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.plugin.zsh >> ~/.zshrc
 ```
 ## Next time you `exec zsh` the plugin will automatically get installed.
