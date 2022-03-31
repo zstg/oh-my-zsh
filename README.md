@@ -17,7 +17,7 @@ echo plugins=(zsh-syntax-highlighting) >> ~/.zshrc
 -->
 
 ```bash
-mv ~/.zshrc ~/.zshrc.bask 
+mv ~/.zshrc ~/.zshrc.bak 
 wget https://raw.githubusercontent.com/zstg/oh-my-zsh/main/zshrc > ~/.zshrc
 wget https://raw.githubusercontent.com/zstg/oh-my-zsh/main/zshenv > ~/.zshenv
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
