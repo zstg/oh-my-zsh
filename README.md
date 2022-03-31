@@ -9,7 +9,10 @@ sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O 
 
 cd /tmp && git clone https://github.com/zstg/oh-my-zsh 
 rm -rf $HOME/**zsh**
-mv ./oh-my-zsh/.zsh** $HOME
+ mv ./oh-my-zsh/** $HOME
+mv ~/zshrc ~/.zshrc && mv ~/zshenv ~/.zshenv
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+echo plugins=(zsh-syntax-highlighting) >> ~/.zshrc
 ```
 
 ## Next time you `exec zsh` the plugin will automatically get installed.
